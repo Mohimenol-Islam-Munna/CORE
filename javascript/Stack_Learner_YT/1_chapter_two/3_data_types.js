@@ -64,6 +64,9 @@ console.log("Object to number :", num10);
 
 // 2. BigInt
 console.log(" ********* BigInt *********");
+let largeData = 10n;
+console.log("BigInt ::", largeData);
+console.log("BigInt Type ::", typeof largeData);
 
 // 3. String
 console.log(" ********* String *********");
@@ -78,7 +81,7 @@ console.log("Typeof of String ::", typeof str1);
 console.log("Typeof String ::", typeof String);
 console.log("Typeof String() ::", typeof String());
 
-// Numeric to String 
+// Numeric to String
 let str4 = String(456);
 console.log("Numeric to String :", str4);
 
@@ -92,7 +95,7 @@ console.log("Boolean to String :", str6);
 let str7 = String(undefined);
 console.log("Undefined to String :", str7);
 
-// Null to String 
+// Null to String
 let str8 = String(null);
 console.log("Null to String :", str8);
 
