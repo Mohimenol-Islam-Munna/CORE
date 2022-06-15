@@ -20,6 +20,10 @@ console.log("Infinity Number ::", 1 / 0);
 // NaN number
 console.log("NaN Number ::", "abc" * 0);
 
+// Infinity vs NaN 
+console.log("Infinity vs NaN  ::", 1 / 0 == "abc" * 0);
+console.log("Infinity vs NaN ::", 1 / 0 === "abc" * 0);
+
 // Compare number
 console.log("Compare Number ::", "123" === 123, 456 === 456);
 
