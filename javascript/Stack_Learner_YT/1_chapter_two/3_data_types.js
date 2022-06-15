@@ -100,6 +100,23 @@ let str8 = String(null);
 console.log("Null to String :", str8);
 
 // 4. Boolean
+console.log(" ********* Boolean *********");
+console.log("true :", true);
+console.log("false :", false);
+
+console.log("Boolean true:", Boolean(0));
+console.log("Boolean false :", Boolean(1));
+
+console.log("Boolean number:", Boolean(123));
+console.log("Boolean string :", Boolean("abc"));
+
+console.log("Boolean true:", Boolean(null));
+console.log("Boolean false :", Boolean(undefined));
+
+console.log("Boolean true compare :", true === true);
+console.log("Boolean false compare :", false === false);
+console.log("Boolean false compare :", true == false);
+
 // 5. Undefined
 // 6. Null
 // 7. Symbol
