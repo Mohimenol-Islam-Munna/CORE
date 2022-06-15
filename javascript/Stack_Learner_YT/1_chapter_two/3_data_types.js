@@ -4,6 +4,7 @@
 
 // --------- Primitives ----------
 // 1. Number
+console.log(" ********* Number *********");
 let num1 = 123;
 console.log("number 1 :", num1);
 console.log("typeof ::", typeof num1);
@@ -17,7 +18,7 @@ console.log("Typeof Number() ::", typeof Number());
 console.log("Infinity Number ::", 1 / 0);
 
 // NaN number
-console.log("NaN Number ::", "abc" / 0);
+console.log("NaN Number ::", "abc" * 0);
 
 // Compare number
 console.log("Compare Number ::", "123" === 123, 456 === 456);
@@ -62,7 +63,39 @@ let num10 = Number({ name: "munna", age: 26 });
 console.log("Object to number :", num10);
 
 // 2. BigInt
+console.log(" ********* BigInt *********");
+
 // 3. String
+console.log(" ********* String *********");
+let str1 = "123";
+let str2 = "munna";
+let str3 = `munna`;
+console.log("String  :", str1);
+console.log("String :", str2);
+console.log("String  :", str3);
+console.log("Typeof of String ::", typeof str1);
+
+console.log("Typeof String ::", typeof String);
+console.log("Typeof String() ::", typeof String());
+
+// Numeric to String 
+let str4 = String(456);
+console.log("Numeric to String :", str4);
+
+// Boolean to String
+let str5 = String(false);
+let str6 = String(true);
+console.log("Boolean to String  :", str5);
+console.log("Boolean to String :", str6);
+
+// !Undefined to String
+let str7 = String(undefined);
+console.log("Undefined to String :", str7);
+
+// Null to String 
+let str8 = String(null);
+console.log("Null to String :", str8);
+
 // 4. Boolean
 // 5. Undefined
 // 6. Null
