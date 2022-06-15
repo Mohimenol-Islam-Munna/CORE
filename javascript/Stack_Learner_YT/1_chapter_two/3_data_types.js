@@ -118,8 +118,34 @@ console.log("Boolean false compare :", false === false);
 console.log("Boolean false compare :", true == false);
 
 // 5. Undefined
+console.log(" ********* Undefined *********");
+
+let und1;
+console.log("Undefined :", und1);
+
 // 6. Null
+let null1 = null;
+console.log(" ********* Null *********");
+console.log("Null :", null1);
+
+console.log("Undefined vs NUll ::", undefined == null);
+console.log("Undefined vs NUll ::", undefined === null);
+
 // 7. Symbol
+console.log(" ********* Symbol *********");
+// create unique value
+let sym1 = Symbol();
+let sym2 = Symbol("id");
+
+console.log("Symbol sym1 ::", sym1);
+console.log("Symbol sym2 ::", sym2);
+
+console.log("Symbol typeof ::", Symbol);
+console.log("Symbol typeof ::", Symbol());
+
+console.log("Symbol compare ::", Symbol() == Symbol());
+console.log("Symbol compare ::", Symbol() === Symbol());
+
 // ---------- End Primitives -----
 
 // --------- Object --------------
