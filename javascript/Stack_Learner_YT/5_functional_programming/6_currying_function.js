@@ -1,5 +1,5 @@
 // ----------------- currying function -----------------
-// 1. This function takes only on argument.
+// 1. This function takes only one argument.
 // 2. If need many arguments then it return another function which takes another argument.
 
 // Ex 1 : General Function
