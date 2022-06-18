@@ -1,4 +1,4 @@
-// ------------------ Function Composition --------------
+// ------------------ Function Composition ---------------
 // 1. When result of one function pass as the argument/input of another function then it's called function composition.
 
 function mainFunc(a) {
