@@ -26,3 +26,9 @@ player = () => {
     return "player function";
 };
 console.log(player());
+// function signature 
+let student;
+student = (name, className) => {
+    return `${name} is studying in class ${className}`;
+};
+console.log(student("Ifti", 9));

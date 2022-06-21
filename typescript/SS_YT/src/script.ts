@@ -37,6 +37,16 @@ let player: Function;
 
 player = () => {
   return "player function";
-};
+}; 
 
 console.log(player())
+
+
+// function signature 
+let student: (name: string, className: number) => string;
+
+student = (name: string, className: number) => {
+    return `${name} is studying in class ${className}`;
+}
+
+console.log(student("Ifti", 9));
