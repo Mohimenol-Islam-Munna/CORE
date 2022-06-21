@@ -15,30 +15,34 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var Employee = /** @class */ (function () {
-    function Employee(name) {
+    function Employee(name, age, dept, contact) {
         this.name = name;
+        this.age = age;
+        this.dept = dept;
+        this.contact = contact;
     }
     Employee.prototype.greetring = function () {
-        return "Hello ".concat(this.name, ", Welcome To typescript world!");
+        return "Hello ".concat(this.name, ", Welcome To typescript world!. Your contact number is ").concat(this.contact);
     };
     return Employee;
 }());
-var munna = new Employee("Md Mohimenol Islam Munna");
+var munna = new Employee("Mohimenol Munna", 26, "CSE", 177);
 console.log(munna.greetring());
+console.log("Access Modifier ::", munna.age);
 // inheritance
 var Developer = /** @class */ (function (_super) {
     __extends(Developer, _super);
-    function Developer(developer, age) {
-        var _this = _super.call(this, developer) || this;
+    function Developer(developer, age, empAge, dept, contact) {
+        var _this = _super.call(this, developer, empAge, dept, contact) || this;
         _this.age = age;
         return _this;
     }
     Developer.prototype.workingStatus = function () {
-        return "".concat(this.age, " years old developer done great job!");
+        return "".concat(this.age, " years old developer done great job! These developer came from ").concat(this.dept, ".");
     };
     return Developer;
 }(Employee));
-var reactDev = new Developer("Md Munna", 26);
+var reactDev = new Developer("Md Munna", 26, 28, "CSE", 17);
 console.log(reactDev.name);
 console.log(reactDev.greetring());
 console.log(reactDev.workingStatus());
