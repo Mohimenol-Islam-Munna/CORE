@@ -5,6 +5,7 @@
 // 3. There are three basic types of ts variables :: string, number, boolean.
 // 4. null and undefined are sub types of ts variables types
 // 5. syntax of variables :: let/const/var variable_name : type = value;
+// 6. When variable declared without type and assign value then it becomes particular type based on it's vlaue
 exports.__esModule = true;
 // ----------------------- basic ------------------------
 // three basic types
@@ -66,5 +67,10 @@ unknownType = true;
 console.log("Unknown type ::", unknownType);
 unknownType = 15;
 console.log("Unknown type ::", unknownType);
-// type assertion 
+// type assertion
 // console.log((unknownType as string).toUpperCase())
+// ------------------------- union type/multiple type --------------------------
+var multipleTypeVariable = "Munna";
+console.log("multipleTypeVariable :", multipleTypeVariable);
+multipleTypeVariable = 20;
+console.log("multipleTypeVariable :", multipleTypeVariable);
