@@ -31,3 +31,12 @@ obj2 = {
 };
 
 console.log(obj2);
+
+// function type
+let player: Function;
+
+player = () => {
+  return "player function";
+};
+
+console.log(player())

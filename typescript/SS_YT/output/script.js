@@ -20,3 +20,9 @@ obj2 = {
     isGraduated: true,
 };
 console.log(obj2);
+// function type
+let player;
+player = () => {
+    return "player function";
+};
+console.log(player());
