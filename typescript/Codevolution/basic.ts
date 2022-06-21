@@ -1,1 +1,4 @@
-console.log("first type script code")
+export {}
+let msg = "Hello Type Script World!!!!!!!!!";
+
+console.log("first type script code :", msg);
