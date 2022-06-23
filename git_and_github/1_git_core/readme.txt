@@ -1,0 +1,1 @@
+Git core functionality
