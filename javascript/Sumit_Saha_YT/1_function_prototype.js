@@ -1,5 +1,5 @@
 // ---------------- Function Prototype -----------------------
-// This is property of any js function which can poin to any object.
+// This is a property of any js function which can point to any object.
 // every function in js is a constructor. It can be called with new keyword. Constructor function name start with Capital leter(It's convension)
 
 // const common = {
@@ -55,7 +55,7 @@ console.log("player2 : ", player2.eat());
 
 
 
-// customize build in Array constructor 
+// customize built-in Array constructor 
 const arr = [];
 
 function Array() {
