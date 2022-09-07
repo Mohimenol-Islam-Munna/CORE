@@ -31,7 +31,7 @@ function optionalParameterFunction(num1: boolean, num2?: number) {
 
 console.log(optionalParameterFunction(true, 10));
 
-// fucntion with optional parameter
+// fucntion with optional parameter and default value
 function defaultParameterFunction(num1: boolean, num2: number = 100) {
   return `${num1} is required parameter value and ${num2} is default parameter value`;
 }

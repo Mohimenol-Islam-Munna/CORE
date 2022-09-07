@@ -1,5 +1,5 @@
 // --------------------- variables ------------------
-// 1. variables of typescript almost same to the variables  of javascript
+// 1. variables of typescript almost same to the variables of javascript
 // 2. Type in ts variables is optional
 // 3. There are three basic types of ts variables :: string, number, boolean.
 // 4. null and undefined are sub types of ts variables types
@@ -22,11 +22,12 @@ let contact: null = null;
 let price: undefined = undefined;
 
 // most use case
+// Remember that when the strictNullChecks flag is set to true in tsconfig.json
 // null and undefined can be stored in three basic types
-let phone: number = null;
-let isGraduated: boolean = undefined;
+// let phone: number = null;
+// let isGraduated: boolean = undefined;
 
-console.log("Sub types ::", contact, " ", price, " ", phone, " ", isGraduated);
+// console.log("Sub types ::", contact, " ", price, " ", phone, " ", isGraduated);
 
 // --------------------- array ------------------------
 // number array
