@@ -100,6 +100,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "exclude": ["1_first.ts", "node_modules", "*.dev.ts"],
+  "exclude": ["1_first.ts", "node_modules", "*.dev.ts", "**/*.dev.ts"],
   "include": ["2_second.ts"]
 }
