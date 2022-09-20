@@ -57,3 +57,32 @@ let employee2 = Func3();
 // console.dir(employee);
 // console.dir(employee2);
 // console.dir(Func3);
+
+function Man() {
+  console.log("man function");
+  return;
+}
+
+Man.prototype.campus = "PUST";
+
+let munna = new Man();
+let ifti = Man();
+
+console.log("munnas campus ::", munna.campus);
+console.dir(Man);
+
+let d = new Date();
+
+console.dir(d.getHours().toString());
+
+function fun() {
+  console.log("arguments ::", arguments[1]);
+}
+
+// const aF = () => {
+//   console.log("arguments ::", arguments);
+// };
+
+
+// aF(10, 20);
+
