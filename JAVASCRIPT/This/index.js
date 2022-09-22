@@ -131,7 +131,7 @@ const player2 = {
 // 1. Using call():
 function playerInfo(age, position) {
   console.log(
-    `${this.name} is playing at ${this.club}. His jersy number is ${
+    `${this.name} is playing at ${this.club}. His jersey number is ${
       this.jersey
     }. He is ${age ? age : 30} years old. He is ${
       position ? position : "Forward"
@@ -150,7 +150,7 @@ playerInfo.call(player2, 38, "playmekar");
 // 2. Using apply():
 function playerInfoTwo(age, position) {
   console.log(
-    `${this.name} is playing at ${this.club}. His jersy number is ${
+    `${this.name} is playing at ${this.club}. His jersey number is ${
       this.jersey
     }. He is ${age ? age : 30} years old. He is ${
       position ? position : "Forward"
@@ -169,7 +169,7 @@ playerInfoTwo.apply(player2, [38, "playmekar"]);
 // 3. Using bind():
 function playerInfoThree(age, position) {
   console.log(
-    `${this.name} is playing at ${this.club}. His jersy number is ${
+    `${this.name} is playing at ${this.club}. His jersey number is ${
       this.jersey
     }. He is ${age ? age : 30} years old. He is ${
       position ? position : "Forward"
