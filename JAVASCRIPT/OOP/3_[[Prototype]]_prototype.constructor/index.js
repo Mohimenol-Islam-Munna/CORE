@@ -25,3 +25,4 @@ console.log(
 );
 
 // prototype.constructor :: This is constructor is used to create this prototype. function prototype is created by function_name.prototype.constructor.
+
