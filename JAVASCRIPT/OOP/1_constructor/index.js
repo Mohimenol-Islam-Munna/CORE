@@ -22,3 +22,11 @@ class Fun2 {
 const f2 = new Fun2("Chorki", 25);
 
 console.log("f2 ::", f2);
+
+// NOTE ::
+
+// Constructor function by default return an object.
+// If we manually return premitives from constructor then it ignore premitives and return  default object.
+// If we manually return object from constructor then it override default return by this new return value. Then new objects form this constructor have no access to prototype properties and methods of this constructor.
+
+// Build-In constructors :: String, Array, Object, Function, Date, Math ... 
