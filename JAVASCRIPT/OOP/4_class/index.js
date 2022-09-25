@@ -1,4 +1,4 @@
-// This is protected property. Actually there is no protected propery in js, it's a convention. In other programming language like (C ++) we can not access protected property from outside the class or inherited class, but in js we can access from outside.
+// Protected property: Actually there is no protected propery in js, it's a convention. In other programming language like ( C++ ) we can not access protected property from outside the class, but in js we can access from outside.
 
 // Bad practice
 class Person {
@@ -7,20 +7,30 @@ class Person {
   designation = "Full Stack Developer";
 }
 
-const obj1 = new Person();
+const obj = new Person();
 
 // Good Practice : Always use constructor function in class.
+
 class Engineer {
   // private property
   #contact;
+
+  //   static property
+  static country = "Bangladesh";
+
+  //   static method
+  static getDesignation() {
+    return "Engineer";
+  }
 
   constructor(name, age, designation, salary, contact) {
     this.name = name;
     this.age = age;
     this.designation = designation;
+    this.#contact = contact;
+
     // protected property
     this._salary = salary;
-    this.#contact = contact;
   }
 
   // access protected property in methods
@@ -42,6 +52,16 @@ class Engineer {
   #getInfo() {
     return "Private Method";
   }
+
+  // get
+  get getName() {
+    return this.name;
+  }
+
+  // set
+  set setName(data) {
+    this.name = data;
+  }
 }
 
 const eng = new Engineer(
@@ -53,10 +73,10 @@ const eng = new Engineer(
 );
 
 // access protected property and method
+console.log("eng ::", eng);
 console.log("eng._salary ::", eng._salary);
 console.log("getSalary ::", eng.getSalary());
 console.log("_getAge ::", eng._getAge());
-
 
 // access private property and method
 
@@ -67,3 +87,15 @@ console.log("getContact ::", eng.getContact());
 
 // this will through error
 // console.log("getContact ::", eng.#getInfo());
+
+// static property & method
+console.log("country ::", Engineer.country);
+
+console.log("getDesignation ::", Engineer.getDesignation());
+
+// get/set methods :: Must be access like property not method
+console.log("getName ::", eng.getName);
+
+// set eng object property name
+eng.setName = "Md Iftekharul Islam Ifti";
+console.log("getName ::", eng.getName);
