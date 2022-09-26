@@ -1,5 +1,3 @@
-// Protected property: Actually there is no protected propery in js, it's a convention. In other programming language like ( C++ ) we can not access protected property from outside the class, but in js we can access from outside.
-
 // Bad practice
 class Person {
   name = "munna";
@@ -10,7 +8,6 @@ class Person {
 const obj = new Person();
 
 // Good Practice : Always use constructor function in class.
-
 class Engineer {
   // private property
   #contact;
@@ -99,3 +96,5 @@ console.log("getName ::", eng.getName);
 // set eng object property name
 eng.setName = "Md Iftekharul Islam Ifti";
 console.log("getName ::", eng.getName);
+
+// Protected property: Actually there is no protected propery in js, it's a convention. In other programming language like ( C++ ) we can not access protected property from outside the class, but in js we can access from outside.
