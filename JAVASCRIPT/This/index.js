@@ -34,6 +34,7 @@ arrowFun();
 
 // this in inner function scope
 function func4() {
+  
   console.log("this in function 4 ::", this);
 
   // :: point to window object
@@ -162,7 +163,7 @@ function playerInfoTwo(age, position) {
 playerInfoTwo.apply(player1);
 playerInfoTwo.apply(player2);
 
-// we can also pass arguments while explicit binding 
+// we can also pass arguments while explicit binding
 playerInfoTwo.apply(player1, [36, "sricker"]);
 playerInfoTwo.apply(player2, [38, "playmekar"]);
 
