@@ -36,26 +36,32 @@ let sObj = new String();
 // console.dir(sObj.toUpperCase());
 
 function Cricketer() {
-  console.log("Cricketer");
-  return "abc";
+  console.log("Cricketer 1");
+
+  this.age = 32;
+  // return {
+  //   name: "Mash",
+  //   jersy: 2,
+  // };
 }
 
 Cricketer.prototype.name = "Hasan Mahmud";
 
 Cricketer.prototype.hasWc = function () {
-  console.log("No");
   return 200;
 };
 
-let hasan = Cricketer();
+let hasan = new Cricketer();
 
-// console.dir(hasan.hasWc);
+console.dir(hasan);
+console.dir(hasan.name);
+console.dir(hasan.age);
 
 let myObj = Object;
 
 let myObj2 = new Object({ id: 9 });
 
-console.dir(Object.prototype);
+// console.dir(Object.prototype);
 // console.dir(myObj2);
 
 // console.dir({ id: 1, name: "mm" });
