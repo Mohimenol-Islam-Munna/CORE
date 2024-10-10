@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>html form</h2>
+    <form action="" onsubmit="onInputHandler()" style="border: 1px solid salmon" id="myForm">
+    <label for="">input</label>
+      <input name="name" type="text" />
+      <textarea name="description" id="" cols="30" rows="1"></textarea>
+      <button type="submit">submit</button>
+      <select name="select" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </form>
+
+    <script>
+        const onInputHandler = () => {
+            event.preventDefault();
+            
+            console.log("on input handler ::", event.target.id)
+        }
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 // ------------------ Function Composition ---------------
-// 1. When result of one function pass as the argument/input of another function then it's called function composition.
+// 1. When result/return of one function pass as the argument/input of another function then it's called function composition.
 
 function mainFunc(a) {
   return a * 100;

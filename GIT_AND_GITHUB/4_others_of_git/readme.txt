@@ -1,1 +1,0 @@
-Others functionality of git
